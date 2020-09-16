@@ -14,3 +14,5 @@ App.js add in, loop to go through data.js and append to table (adding tr)
 
 completed interaction with button, taking input, utilizing input to filter data, showing only filtered data on screen
 
+Bonus; successfully added all filter boxes, need to use all boxes otherwise code cant filter a null value.
+
