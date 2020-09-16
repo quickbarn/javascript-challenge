@@ -39,10 +39,10 @@ function filterClick() {
 
   //take the date entered into id = "datetime"
   var filterElement = d3.select("#datetime");
-  var city = d3.select("city");
-  var state = d3.select("state");
-  var country = d3.select("country");
-  var shape = d3.select("shape");
+  var city = d3.select("#city");
+  var state = d3.select("#state");
+  var country = d3.select("#country");
+  var shape = d3.select("#shape");
   // utilize the datetime and turn it into a value to use
   var filterValue = filterElement.property("value");
   var filterValue2 = city.property("value");
