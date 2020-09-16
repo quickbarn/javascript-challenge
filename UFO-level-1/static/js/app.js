@@ -54,17 +54,17 @@ function filterClick() {
   console.log(filterValue);
   console.log(tableData);
 
-  var filteredData = tableData.filter(tableData => tableData.datetime == filterValue)
-                              .filter(tableData => tableData.city == filterValue2)
-                              .filter(tableData => tableData.state == filterValue3)
-                              .filter(tableData => tableData.country == filterValue4)
-                              .filter(tableData => tableData.shape == filterValue5);
-
+  var filteredData1 = tableData.filter(tableData => tableData.datetime === filterValue)
+                              .filter(tableData => tableData.city === filterValue2)
+                              .filter(tableData => tableData.state === filterValue3)
+                              .filter(tableData => tableData.country === filterValue4)
+                              .filter(tableData => tableData.shape === filterValue5);
+  
   console.log(filteredData);
 
-  filteredData.forEach((ufoReport) => {
+  filteredData1.forEach((ufoReport1) => {
     var row = tbody.append("tr");
-    Object.entries(ufoReport).forEach(([key, value]) => {
+    Object.entries(ufoReport1).forEach(([key, value]) => {
       var cell = row.append("td");
       cell.text(value);
     });
